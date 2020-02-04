@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QeV-x6-XPy">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,18 +12,18 @@
             <objects>
                 <viewController id="M4j-aD-yaE" userLabel="Movie View Controller" customClass="MovieViewController" customModule="flix" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7W1-IB-o8q">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="189" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nEv-hB-pXZ">
-                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <rect key="frame" x="0.0" y="44" width="736" height="370"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="189" id="iyJ-eC-zUM" customClass="MovieCell" customModule="flix" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="189"/>
+                                        <rect key="frame" x="0.0" y="28" width="736" height="189"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iyJ-eC-zUM" id="VDX-dI-htw">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="189"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="736" height="189"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ech-ug-kHC">
@@ -36,7 +36,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Zr-TJ-8kh">
-                                                    <rect key="frame" x="128" y="53" width="240" height="125"/>
+                                                    <rect key="frame" x="128" y="53" width="596" height="125"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="125" id="k9x-h0-5Za"/>
                                                     </constraints>
@@ -45,10 +45,10 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2n-Sj-pDE">
-                                                    <rect key="frame" x="135" y="21" width="225" height="24"/>
+                                                    <rect key="frame" x="135" y="21" width="573" height="24"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="24" id="9qJ-fC-Ey5"/>
-                                                        <constraint firstAttribute="width" constant="225" id="lup-dk-1Ls"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="225" id="lup-dk-1Ls"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                     <nil key="textColor"/>
@@ -63,6 +63,7 @@
                                                 <constraint firstItem="o2n-Sj-pDE" firstAttribute="leading" secondItem="ech-ug-kHC" secondAttribute="trailing" constant="15" id="YOQ-tu-UOu"/>
                                                 <constraint firstItem="7Zr-TJ-8kh" firstAttribute="trailing" secondItem="VDX-dI-htw" secondAttribute="trailingMargin" constant="8" id="eRo-Um-8Hc"/>
                                                 <constraint firstItem="7Zr-TJ-8kh" firstAttribute="top" secondItem="o2n-Sj-pDE" secondAttribute="bottom" constant="8" id="gEy-qp-mdG"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="o2n-Sj-pDE" secondAttribute="trailing" constant="8" id="j02-pI-aa8"/>
                                                 <constraint firstItem="ech-ug-kHC" firstAttribute="leading" secondItem="VDX-dI-htw" secondAttribute="leading" constant="15" id="sBC-dx-Clf"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -99,7 +100,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QeV-x6-XPy" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yVk-oS-REc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
