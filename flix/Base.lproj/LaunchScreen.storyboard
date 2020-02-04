@@ -15,12 +15,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="launch_image" translatesAutoresizingMaskIntoConstraints="NO" id="3KM-L2-TuQ">
-                                <rect key="frame" x="118" y="264" width="138" height="139"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="launch_image" translatesAutoresizingMaskIntoConstraints="NO" id="3KM-L2-TuQ">
+                                <rect key="frame" x="118.5" y="264" width="138" height="139"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3KM-L2-TuQ" secondAttribute="height" multiplier="138:139" id="iua-h9-sMJ"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3KM-L2-TuQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="118.5" id="6ua-WI-PxH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3KM-L2-TuQ" secondAttribute="bottom" constant="264" id="MLC-ga-sm8"/>
+                            <constraint firstItem="3KM-L2-TuQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="264" id="MQ4-zW-aBj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3KM-L2-TuQ" secondAttribute="trailing" constant="118.5" id="ZPM-ke-1iK"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
