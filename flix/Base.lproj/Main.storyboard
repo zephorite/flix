@@ -130,6 +130,7 @@
                                         </collectionViewCellContentView>
                                         <connections>
                                             <outlet property="posterView" destination="NFw-Vo-BMa" id="TP6-OZ-DAw"/>
+                                            <segue destination="pVz-RX-I92" kind="show" id="0WL-Ud-CNx"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -171,7 +172,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DgE-y6-kby">
-                                <rect key="frame" x="20" y="330" width="339" height="19"/>
+                                <rect key="frame" x="20" y="329.5" width="339" height="19.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="339" id="zoR-vZ-D2q"/>
                                 </constraints>
@@ -218,7 +219,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sNO-Hr-s1e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-504.80000000000001" y="1078.1109445277361"/>
+            <point key="canvasLocation" x="-1" y="1250"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="1x7-Hl-lVr">
@@ -284,4 +285,7 @@
         <image name="now_playing_tabbar_item" width="21" height="21"/>
         <image name="superhero_tabbar_item" width="21" height="23"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="0WL-Ud-CNx"/>
+    </inferredMetricsTieBreakers>
 </document>
