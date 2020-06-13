@@ -21,7 +21,7 @@ class MovieViewController: UIViewController, UITableViewDataSource, UITableViewD
         let synopsis = movie["overview"] as! String
         
         let baseUrl = "https://image.tmdb.org/t/p/w185"
-        let posterPath = movie["poster_path"] as! String
+        let posterPath = movie["poster_path"] as? String ?? ""
         let posterUrl = URL(string : baseUrl + posterPath)
         
         cell.titleLabel.text = title
